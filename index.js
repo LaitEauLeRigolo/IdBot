@@ -10,11 +10,6 @@ const client = new Discord.Client({
     ]
 });
 
-    const dataa = new SlashCommandBuilder()
-    .setName("suggestion")
-    .setDescription ("suggérer quelque chose.")
-    .addUserOption(option => option.setName("suggestion :").setDescription("écrivez votre suggestion.").setRequired(true));
-
     const data = new SlashCommandBuilder()
     .setName("ping")
     .setDescription ("🏓 pong !")
@@ -25,9 +20,6 @@ var nbTicket = 0;
 client.on("ready", async () => {
     
     client.application.commands.create(data);
-
-    client.application.commands.create(dataa);
-    
     
     /*const row = new ActionRowBuilder()
         .addComponents(
@@ -152,13 +144,6 @@ client.on("interactionCreate", interaction => {
         }
     }
 
-    client.on("interactionCreate", interaction => {
-        if(interaction.isCommand()){
-            if(interaction.commandName === "suggestion"){
-                
-            }
-        }
-    })
 });
 
 client.login(process.env.BOT_TOKEN);
