@@ -145,4 +145,4 @@ client.on("interactionCreate", interaction => {
     }
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login("MTAwMzA0NDgxMDM2NzY5Njk5Ng.GhYYIO.e7ousgzlx2-kcFsD3wKv045OrtQgTHpX-nGXj");
