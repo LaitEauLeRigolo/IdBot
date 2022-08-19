@@ -21,7 +21,7 @@ client.on("ready", async () => {
     
     Client.user.setPresence({
         activities: [{
-            name: '${ Client.guilds.cache.get('client.guild.name').memberCount} membres d'IdCraft',
+            name: '${ Client.guilds.cache.get('guild.name').memberCount} membres d'IdCraft',
             type : 'Listening',
         }],
         status: 'dnd'
