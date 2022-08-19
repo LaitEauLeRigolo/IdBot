@@ -18,14 +18,7 @@ const client = new Discord.Client({
 var nbTicket = 0;
 
 client.on("ready", async () => {
-    
-    Client.user.setPresence({
-        activities: [{
-            name: '${ Client.guilds.cache.get('guild.name').memberCount} membres d'IdCraft',
-            type : 'Listening',
-        }],
-        status: 'dnd'
-    });
+   
     
     client.application.commands.create(data);
     
